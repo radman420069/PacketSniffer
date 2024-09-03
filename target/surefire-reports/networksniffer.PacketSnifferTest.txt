@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: networksniffer.PacketSnifferTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.184 s <<< FAILURE! - in networksniffer.PacketSnifferTest
+testPacketSnifferInitialization  Time elapsed: 0.174 s  <<< ERROR!
+java.lang.UnsatisfiedLinkError: 
+Unable to load library 'wpcap':
+The specified module could not be found.
+
+The specified module could not be found.
+
+The specified module could not be found.
+
+Native library (win32-x86-64/wpcap.dll) not found in resource path (C:\Users\radco\Desktop\Rad's Folder (Everything)\College Folder\sniffer\target\test-classes;C:\Users\radco\Desktop\Rad's Folder (Everything)\College Folder\sniffer\target\classes;C:\Users\radco\.m2\repository\org\pcap4j\pcap4j-core\1.8.1\pcap4j-core-1.8.1.jar;C:\Users\radco\.m2\repository\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar;C:\Users\radco\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\radco\.m2\repository\org\pcap4j\pcap4j-packetfactory-static\1.8.1\pcap4j-packetfactory-static-1.8.1.jar;C:\Users\radco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\radco\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\radco\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\radco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\radco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\radco\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;)
+	at networksniffer.PacketSnifferTest.testPacketSnifferInitialization(PacketSnifferTest.java:19)
+
+testPacketCapture  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.pcap4j.core.NativeMappings
+	at networksniffer.PacketSnifferTest.testPacketCapture(PacketSnifferTest.java:33)
+Caused by: java.lang.ExceptionInInitializerError: 
+Exception java.lang.UnsatisfiedLinkError: Unable to load library 'wpcap':
+The specified module could not be found.
+
+The specified module could not be found.
+
+The specified module could not be found.
+
+Native library (win32-x86-64/wpcap.dll) not found in resource path (C:\Users\radco\Desktop\Rad's Folder (Everything)\College Folder\sniffer\target\test-classes;C:\Users\radco\Desktop\Rad's Folder (Everything)\College Folder\sniffer\target\classes;C:\Users\radco\.m2\repository\org\pcap4j\pcap4j-core\1.8.1\pcap4j-core-1.8.1.jar;C:\Users\radco\.m2\repository\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar;C:\Users\radco\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\radco\.m2\repository\org\pcap4j\pcap4j-packetfactory-static\1.8.1\pcap4j-packetfactory-static-1.8.1.jar;C:\Users\radco\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\radco\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\radco\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\radco\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\radco\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\radco\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;) [in thread "main"]
+	at networksniffer.PacketSnifferTest.testPacketSnifferInitialization(PacketSnifferTest.java:19)
+
